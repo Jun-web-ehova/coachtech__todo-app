@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ secure_asset('css/reset.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <title>Todo</title>
 </head>
@@ -13,7 +13,9 @@
   <main>
     <h2>Todo List</h2>
     @error('content')
-    <p>{{$message}}</p>
+    <ul>
+      <li>{{$message}}</li>
+    </ul>
     @enderror
     <form class="form__header" action="/todo" method="POST">
       @csrf
