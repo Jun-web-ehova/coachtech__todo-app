@@ -12,6 +12,9 @@
 <body>
   <main>
     <h2>Todo List</h2>
+    @error('content')
+    <p>{{$message}}</p>
+    @enderror
     <form class="form__header" action="/todo" method="POST">
       @csrf
       <input type="text" class="header__content" name="content">
