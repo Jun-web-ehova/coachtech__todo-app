@@ -48,6 +48,10 @@ h2 {
     color: white;
     background-color: #dc70fa;
 }
+main ul {
+    padding: 0;
+    margin: 0;
+}
 table {
     width: 100%;
     height: fit-content;
